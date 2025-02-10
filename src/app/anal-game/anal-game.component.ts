@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-anal-game',
   imports: [],
   templateUrl: './anal-game.component.html',
-  styleUrl: './anal-game.component.css'
+  styleUrl: './anal-game.component.css',
+  
 })
 export class AnalGameComponent {
-
 }

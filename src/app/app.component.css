@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
-
-body {
-    background: #6868AC;
-}
 
 .cletter {
     width: 100%;
@@ -27,14 +22,12 @@ body {
 }
 
 .boxes {
-    background: #e77fa1;
-    padding: 18px;
-    border: 10px solid #fac9d9;
-    border-radius: 25px;
-    top: 50px;
+    border: 10px groove #f47586;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    top: 15px;
     position: relative;
-
-}
+} 
 
 ul>li {
     display: inline-block;
@@ -52,9 +45,9 @@ img {
     /* the size of the image */
     --b: 8px;
     /* the border thickness*/
-    --g: 14px;
+    --g: 2px;
     /* the gap */
-    --c: #ff8aef;
+    --c: #f47586;
     /* the color */
 
     width: var(--s);

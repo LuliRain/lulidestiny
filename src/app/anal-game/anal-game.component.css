@@ -1,0 +1,9 @@
+.card {
+    margin-top: 50px;
+    /* Add margin to the top of the card */
+}
+
+.card-body {
+    padding: 20px;
+    /* Add padding to the card body */
+}
