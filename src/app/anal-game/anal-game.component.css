@@ -1,9 +1,12 @@
 .card {
     margin-top: 50px;
-    /* Add margin to the top of the card */
+    width: 150%;
+    margin-left: -120px;
+    border: 12px solid orange;
 }
 
 .card-body {
-    padding: 20px;
-    /* Add padding to the card body */
+    padding: 40px;
+    width: auto;
+    border: 12px solid red;
 }
