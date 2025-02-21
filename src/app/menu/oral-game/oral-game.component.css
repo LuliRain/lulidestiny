@@ -1,0 +1,17 @@
+.card {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border: 12px solid #f47586;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 40px;
+    width: auto;
+    border: 12px solid orange;
+}
+
+.container {
+    margin-top: -250px; /* Ajusta este valor según sea necesario */
+}

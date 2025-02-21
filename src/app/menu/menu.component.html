@@ -3,26 +3,43 @@
             class="boxes">El Destino de Luli</a></h1>
     <div style="padding: 25px;"></div>
     <h2 style="font-size: 50px;"><a style="text-decoration: none; padding-right: 15px; padding-left: 15px;"
-            class="boxes">A que jugarás hoy putita?</a></h2>
+            class="boxes">A que jugarás hoy ?</a></h2>
     <div style="padding: 30px;"></div>
-    <nav>
+    <nav class="menu-container">
+        <div class="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+            <div class="timer-controls">
+                <button (click)="startTimer()">Start</button>
+                <button (click)="stopTimer()">Stop</button>
+                <button (click)="resetTimer()">Reset</button>
+            </div>
+        </div>
         <ul style="list-style-type: none; font-size: 40px;">
-            <li><a routerLink="/anal" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/analo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/anal.jpg"></a>
-                <p>Anal!</p>
+                <p>Analo!</p>
             </li>
-            <li><a routerLink="/gape" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/gapeo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/gape.jpg"></a>
-                <p>Gape!</p>
+                <p>Gapeo!</p>
             </li>
-            <li><a routerLink="/oral" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/oralo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/oral.jpg"></a>
-                <p>Oral!</p>
+                <p>Oralo!</p>
             </li>
-            <li><a routerLink="/write" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/writeo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/write.jpg"></a>
-                <p>Write!</p>
+                <p>Writeo!</p>
             </li>
         </ul>
     </nav>
+    <div class="bpm-meter">
+        <div class="bpm-display" id="bpmDisplay"></div>
+        <div class="bpm-value" id="bpmValue">{{ bpm }} BPM</div>
+        <div class="bpm-controls">
+            <button (click)="increaseBPM()">+</button>
+            <button (click)="decreaseBPM()">-</button>
+        </div>
+    </div>
 </div>
+
