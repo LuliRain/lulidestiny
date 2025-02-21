@@ -2,7 +2,7 @@ html, body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-    url('/images/bg.jpg');
+    url('https://i.postimg.cc/x89P6Yjj/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
