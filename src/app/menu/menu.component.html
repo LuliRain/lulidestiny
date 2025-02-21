@@ -1,9 +1,15 @@
 <div class="cletter">
-    <h1 style="font-size: 90px;"><a style="text-decoration: none; padding-left: 10px; padding-right: 15px;"
-            class="boxes">El Destino de Luli</a></h1>
+    <h1 class="main-title">
+        <a style="text-decoration: none; padding-left: 10px; padding-right: 15px;" class="boxes">
+            🍆 El Destino de Luli 🍆
+        </a>
+    </h1>
     <div style="padding: 25px;"></div>
-    <h2 style="font-size: 50px;"><a style="text-decoration: none; padding-right: 15px; padding-left: 15px;"
-            class="boxes">A que jugarás hoy ?</a></h2>
+    <h2 class="sub-title">
+        <a style="text-decoration: none; padding-right: 15px; padding-left: 15px;" class="boxes">
+            🥛 A que jugarás hoy putita? 🥛
+        </a>
+    </h2>
     <div style="padding: 30px;"></div>
     <nav class="menu-container">
         <div class="timer">
@@ -15,21 +21,21 @@
             </div>
         </div>
         <ul style="list-style-type: none; font-size: 40px;">
-            <li><a routerLink="/analo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/anal" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/anal.jpg"></a>
-                <p>Analo!</p>
+                <p>Anal!</p>
             </li>
-            <li><a routerLink="/gapeo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/gape" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/gape.jpg"></a>
-                <p>Gapeo!</p>
+                <p>Gape!</p>
             </li>
-            <li><a routerLink="/oralo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/oral" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/oral.jpg"></a>
-                <p>Oralo!</p>
+                <p>Oral!</p>
             </li>
-            <li><a routerLink="/writeo" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
+            <li><a routerLink="/write" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="circle"
                         src="/images/write.jpg"></a>
-                <p>Writeo!</p>
+                <p>Write!</p>
             </li>
         </ul>
     </nav>
@@ -39,7 +45,11 @@
         <div class="bpm-controls">
             <button (click)="increaseBPM()">+</button>
             <button (click)="decreaseBPM()">-</button>
+            <button (click)="toggleMute()">{{ isMuted ? 'Unmute' : 'Mute' }}</button>
         </div>
+    </div>
+    <div class="floating-dice">
+        <button (click)="rollDice()">🎲</button>
     </div>
 </div>
 

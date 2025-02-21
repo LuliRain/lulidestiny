@@ -20,6 +20,22 @@
         11px 11px 0px #90B1E0;
 }
 
+.main-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    color: #FF69B4;
+    text-shadow: 2px 2px 0px #FFB6C1, 4px 4px 0px #FF69B4;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #FF69B4;
+    text-shadow: 2px 2px 0px #FFB6C1, 4px 4px 0px #FF69B4;
+    margin-bottom: 30px;
+}
+
 .boxes {
     border: 10px groove #f47586;
     background-color: antiquewhite;
@@ -136,6 +152,10 @@ ul {
     padding: 10px;
     z-index: 1000; /* Asegura que el medidor esté por encima de otros elementos */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .bpm-display {
@@ -171,4 +191,128 @@ ul {
 .bpm-controls button:hover {
     background-color: #f47586;
     color: antiquewhite;
+}
+
+.floating-dice {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-dice button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.floating-dice button:hover {
+    background-color: #ff9900;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1360px) {
+    .cletter {
+        font-size: 8rem;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .timer, .bpm-meter {
+        font-size: 25px;
+        padding: 6px;
+    }
+
+    .timer-controls button, .bpm-controls button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cletter {
+        font-size: 10rem;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .timer, .bpm-meter {
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    .timer-controls button, .bpm-controls button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cletter {
+        font-size: 7rem;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timer, .bpm-meter {
+        font-size: 25px;
+        padding: 6px;
+    }
+
+    .timer-controls button, .bpm-controls button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul>li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cletter {
+        font-size: 5rem;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timer, .bpm-meter {
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    .timer-controls button, .bpm-controls button {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul>li {
+        padding: 5px;
+    }
 }
